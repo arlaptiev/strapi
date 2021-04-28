@@ -27,9 +27,10 @@ const { UPDATED_BY_ATTRIBUTE, CREATED_BY_ATTRIBUTE } = contentTypesUtils.constan
 const randomSuffix = () => crypto.randomBytes(5).toString('hex');
 
 const generateFileName = name => {
-  const baseName = nameToSlug(name, { separator: '_', lowercase: false });
+//   const baseName = nameToSlug(name, { separator: '_', lowercase: false });
 
-  return `${baseName}_${randomSuffix()}`;
+//   return `${baseName}_${randomSuffix()}`;
+  return name;
 };
 
 const sendMediaMetrics = data => {
